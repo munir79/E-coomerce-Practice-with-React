@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ShowProduct from './ShowProduct';
 import '../CSS/grid.css'
+import Summary from './Summary';
 
 const Shop = () => {
     const [products,setProducts]=useState([]);
@@ -21,8 +22,7 @@ const Shop = () => {
    { products.map(product=><ShowProduct  handleAddToCart={handleAddToCart}  product={product} key={product.id} ></ShowProduct>)}
     </div>
     <div className='sum'>
-      <h3> summary</h3>
-      <h4> Selected Item: {cart.length} </h4>
+     <Summary cart={cart}></Summary>
     </div>
         </div>
     );
