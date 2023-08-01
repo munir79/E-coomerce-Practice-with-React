@@ -3,6 +3,6 @@
     width: 286px;
 }
 .show{
-    border: 2px solid red;
+    box-shadow: 2px 4px 5px 5px whitesmoke;
     border-radius: 20px;
 }
